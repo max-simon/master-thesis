@@ -1,0 +1,92 @@
+\documentclass[
+    12pt, % font size
+    parskip=half, % space between paragraphs instead of indentation
+    print, % digital or print
+    oneside, % oneside / twoside
+    %	openright, % openright for title page and subsequent chapters on right pages in twosided layout
+]{thesis}
+
+\usepackage{microtype}
+
+\usepackage{booktabs, enumitem, afterpage}
+
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{acronym}
+
+\usepackage{cleveref}
+\usepackage{enumitem}
+
+\usepackage{datetime}
+\renewcommand{\dateseparator}{.}
+
+\title{On the Impact of Submesoscale Fronts on Mesoscale Eddies and Biological Productivity in the California Current System}
+\author{Max Simon}
+\date{December 19, 2020}
+
+\addbibresource{references.bib}
+
+%% Hypothesis Design
+\newcounter{hypothesis}
+\newenvironment{hypothesis}%
+{
+    \begin{enumerate}[label=\textbf{H\arabic*:}, ref=H\arabic*, rightmargin=0.8cm, leftmargin=1.5cm, labelsep=0.6cm]
+        \setcounter{enumi}{\thehypothesis}
+        \item \bfseries
+}{\end{enumerate}\refstepcounter{hypothesis}}
+\newcommand{\hypothesisref}[1]{\hyperref[#1]{hypothesis \ref{#1}}}
+\renewcommand{\sectionautorefname}{chapter}
+\renewcommand{\subsectionautorefname}{chapter}
+
+\begin{document}
+	
+	% Setzt einen relativen Pfad für alle Bilder
+	\graphicspath{{figures/}}
+	
+ 	%% title pages similar to provided template instead of maketitle
+ 	\include{titlepages-eng} % or english title page
+ 	
+ 	\pagenumbering{roman}
+ 	\include{abstract/abstracts}
+
+ 	\tableofcontents
+ 	
+ 	\include{acronyms}
+ 	
+ 	\pagenumbering{arabic}
+ 	%%
+ 	%% Introduction
+ 	%% 
+ 	\include{introduction/main}
+ 	
+ 	%%
+ 	%% Data & Methods
+ 	%% 
+ 	\include{dataMethods/main}
+ 	
+ 	%%
+ 	%% Results
+ 	%% 
+ 	\include{results/main}
+
+	%%
+	%% Discussion & Outlook
+	%% 
+	\include{discussion/main}
+	
+	\include{acknowledgements}
+ 	
+	\begin{appendices}
+	    \input{results/figures}
+		\chapter{Lists}
+		\listoffigures
+		\listoftables
+		\printbibliography
+	\end{appendices}
+	
+	\include{deposition}
+\end{document}
