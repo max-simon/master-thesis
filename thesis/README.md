@@ -1,8 +1,9 @@
 # On the Impact of Submesoscale Fronts on Mesoscale Eddies and Biological Productivity in the California Current System
 
-Author: Max Simon
-Submission Date: 18.12.2020
-Institute: Department of Environmental Systems Science, ETH Zürich
+**Author**: Max Simon \
+**Submission date**: 18.12.2020 \
+**Institute**: _Department of Environmental Systems Science_, ETH Zürich and _Department of Physics and Astronomy_, University of Heidelberg \
+**Supervisors**: [Prof. Dr. Norbert Frank (University of Heidelberg)](https://www.iup.uni-heidelberg.de/de/institut/mitarbeiter/prof-norbert-frank), [Prof. Dr. Nicolas Gruber (ETH Zürich)](https://usys.ethz.ch/personen/profil.nicolas-gruber.html) and [Dr. Matthias Münnich (ETH Zürich)](https://up.ethz.ch/people/person-detail.NDY0NDk=.TGlzdC8xMDg5LC0zMDYxNTA1MjU=.html)
 
 ## Abstract
 
